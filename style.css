@@ -1,4 +1,5 @@
 .grid-container{
+    height: 100vh;
     display:grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 100px 5fr;
@@ -13,28 +14,15 @@ header{
     border: 5px solid red
 
 }
-.right-sidebar{
+main{
     grid-column: 2/3;
+    border: 5px solid red
+}
+.right-sidebar{
+    grid-column: 3/4;
 }
 .right-sidebar article p{
     font-size: 10px;
-}
-main{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-column: 2/4;
-    border: 5px solid red
-}
-.main-section{
-    grid-column: 1/2;
-    display: grid;
-}
-.main-section span{
-    grid-column: 1 /-1
-}
-.main-section section{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .trending article{
     display: grid;
@@ -42,4 +30,9 @@ main{
 }
 .descriptor{
     grid-column: 2/3
+}
+.main-section section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
 }
