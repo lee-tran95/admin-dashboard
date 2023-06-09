@@ -1,8 +1,8 @@
 .grid-container{
     height: 100vh;
     display:grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 100px 5fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 150px 5fr;
 }
 header{
     grid-column: 2/4;
@@ -14,6 +14,29 @@ header{
     border: 5px solid red
 
 }
+.logo{
+    font-size: 2rem;
+}
+.logo img {
+    height: 3rem;
+}
+.logo-image{
+    vertical-align: middle;
+}
+.sidebar ul{
+    padding-left: 15px;
+    margin-top: 50px;
+}
+ .sidebar ul li{
+    list-style-type: none;
+    margin-top: 15px;
+ }
+ .sidebar ul li a{
+    text-decoration: none;
+    padding-left: 15px;
+    font-size: 22px;
+    color: black;
+ }
 main{
     grid-column: 2/3;
     border: 5px solid red
