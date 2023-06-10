@@ -59,6 +59,12 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
 }
-.card img {
+.actions{
+    text-align: right;
+    padding: 10px;
+}
+.actions img {
     height: 20px;
+    padding: 0px 10px;
+    
 }
