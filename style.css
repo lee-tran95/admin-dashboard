@@ -11,14 +11,18 @@ header{
 .sidebar{
     grid-column: 1/2;
     grid-row: 1/3;
-    border: 5px solid red
+    background-color: #1992D4;
 
 }
 .logo{
     font-size: 2rem;
 }
+.logo span{
+    color: white;
+}
 .logo img {
     height: 3rem;
+    filter: invert(100%) sepia(0%) saturate(7449%) hue-rotate(190deg) brightness(117%) contrast(100%);
 }
 .logo-image{
     vertical-align: middle;
@@ -31,15 +35,17 @@ header{
     list-style-type: none;
     margin-top: 15px;
  }
+ .sidebar ul li span{
+    color: white;
+ }
  .sidebar ul li a{
     text-decoration: none;
     padding-left: 15px;
     font-size: 22px;
-    color: black;
+    color: white;
  }
 main{
     grid-column: 2/3;
-    border: 5px solid red
 }
 .right-sidebar{
     grid-column: 3/4;
@@ -55,25 +61,38 @@ main{
     grid-column: 2/3
 }
 .main-section{
-    background-color: gray;
+    background-color: #E2E8F0;
+    padding: 20px 10px;
 }
 .main-section section{
     padding: 0px 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
+    margin-top: 10px;
+}
+.main-section > span {
+    margin-left: 5px;
+    font-size: 20px;
 }
 .card{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: -5px 0px rgba(255, 174, 0, 0.671);
+    box-shadow: -5px 0px #F0B429;
+}
+.card h5, .card p{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .card h5{
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 0px;
+}
+.card p{
+    margin-top: 0px;
 }
 .actions{
     text-align: right;
